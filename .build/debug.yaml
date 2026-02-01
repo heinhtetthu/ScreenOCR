@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "ScreenOCR-arm64-apple-macosx26.0-debug.exe": ["<ScreenOCR-arm64-apple-macosx26.0-debug.exe>"]
+  "ScreenOCR-arm64-apple-macosx26.0-debug.module": ["<ScreenOCR-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<ScreenOCR-arm64-apple-macosx26.0-debug.exe>","<ScreenOCR-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<ScreenOCR-arm64-apple-macosx26.0-debug.exe>","<ScreenOCR-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR":
+    is-mutated: true
+commands:
+  "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR-entitlement.plist"]
+    description: "Write auxiliary file /Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR-entitlement.plist"
+
+  "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Overlay/CaptureOverlay.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Overlay/SelectionView.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/ScreenOCRApp.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/HotKeyManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/Logger.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/OCRService.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/PermissionManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/HUDManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/MenuBarManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/PreferencesView.swift"]
+    outputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/sources"]
+    description: "Write auxiliary file /Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/sources"
+
+  "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/CaptureOverlay.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HUDManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HotKeyManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/Logger.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/MenuBarManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/OCRService.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PermissionManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PreferencesView.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/ScreenOCRApp.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/SelectionView.swift.o"]
+    outputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.product/Objects.LinkFileList"
+
+  "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<ScreenOCR-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<ScreenOCR-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<ScreenOCR-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<ScreenOCR-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/CaptureOverlay.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/SelectionView.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/ScreenOCRApp.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HotKeyManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/Logger.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/OCRService.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PermissionManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HUDManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/MenuBarManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PreferencesView.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/Modules/ScreenOCR.swiftmodule"]
+    outputs: ["<ScreenOCR-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.ScreenOCR-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/CaptureOverlay.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HUDManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HotKeyManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/Logger.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/MenuBarManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/OCRService.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PermissionManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PreferencesView.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/ScreenOCRApp.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/SelectionView.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.product/Objects.LinkFileList"]
+    outputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/ScreenOCR"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug","-o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR","-module-name","ScreenOCR","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_ScreenOCR_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/Modules/ScreenOCR.swiftmodule","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.ScreenOCR-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR-entitlement.plist"]
+    outputs: ["<ScreenOCR-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/ScreenOCR"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR-entitlement.plist","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR"]
+
+  "C.ScreenOCR-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Overlay/CaptureOverlay.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Overlay/SelectionView.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/ScreenOCRApp.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/HotKeyManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/Logger.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/OCRService.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/PermissionManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/HUDManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/MenuBarManager.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/PreferencesView.swift","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/sources"]
+    outputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/CaptureOverlay.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/SelectionView.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/ScreenOCRApp.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HotKeyManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/Logger.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/OCRService.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PermissionManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/HUDManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/MenuBarManager.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/PreferencesView.swift.o","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/Modules/ScreenOCR.swiftmodule"]
+    description: "Compiling Swift Module 'ScreenOCR' (10 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","ScreenOCR","-emit-dependencies","-emit-module","-emit-module-path","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/Modules/ScreenOCR.swiftmodule","-output-file-map","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/output-file-map.json","-incremental","-c","@/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ScreenOCR.build/sources","-I","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","ScreenOCR_main","-color-diagnostics","-swift-version","6","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","screenocr"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/","/Users/allen/Downloads/MacApp/ScreenOCR/Package.swift","/Users/allen/Downloads/MacApp/ScreenOCR/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

@@ -1,0 +1,67 @@
+{
+  "": {
+    "dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/ScreenOCR.d",
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/ScreenOCR.o",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/master.swiftdeps"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Overlay/CaptureOverlay.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/CaptureOverlay.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/CaptureOverlay~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/CaptureOverlay.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/CaptureOverlay.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Overlay/SelectionView.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/SelectionView.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/SelectionView~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/SelectionView.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/SelectionView.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/ScreenOCRApp.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/ScreenOCRApp.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/ScreenOCRApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/ScreenOCRApp.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/ScreenOCRApp.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/HotKeyManager.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HotKeyManager.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HotKeyManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HotKeyManager.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HotKeyManager.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/Logger.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/Logger.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/Logger~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/Logger.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/Logger.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/OCRService.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/OCRService.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/OCRService~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/OCRService.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/OCRService.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/Services/PermissionManager.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PermissionManager.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PermissionManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PermissionManager.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PermissionManager.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/HUDManager.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HUDManager.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HUDManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HUDManager.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/HUDManager.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/MenuBarManager.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/MenuBarManager.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/MenuBarManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/MenuBarManager.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/MenuBarManager.dia"
+  },
+  "/Users/allen/Downloads/MacApp/ScreenOCR/Sources/ScreenOCR/UI/PreferencesView.swift": {
+    "object": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PreferencesView.swift.o",
+    "swiftmodule": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PreferencesView~partial.swiftmodule",
+    "swift-dependencies": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PreferencesView.swiftdeps",
+    "diagnostics": "/Users/allen/Downloads/MacApp/ScreenOCR/.build/arm64-apple-macosx/release/ScreenOCR.build/PreferencesView.dia"
+  }
+}
